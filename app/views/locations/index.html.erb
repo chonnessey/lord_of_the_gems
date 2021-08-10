@@ -5,6 +5,10 @@
   <h4>You want to party with the orcs, you gotta log in.</h4>
 <% end %>
 
+
+<%# <% @locations.each do |location| %>
+<%# <%= render :partial => "layouts/location_card", :locals => {:location => location} %>
+<%# <% end %>
   <tbody>
     <% @locations.each do |location| %>
       <tr>
@@ -21,15 +25,7 @@
 
 <h4>Off in the distance you see <%= @npc.name %> fast approaching.</h4>
 
-<div class="card">
-  <div class="card-body">
-    <h4 class="card-title"><%= @npc.name %></h4>
-    <div class="card-text">
-      <p><%= @npc.race%> <%= @npc.class%></p>
-      <p><%= @npc.hit_points %></p>
-      <p><%= @npc.disposition %></p>
-    </div>
-  </div>
-</div>
+<%= render :partial => "layouts/npc_card", :locals => {:npc => @npc} %>
+
 
 <%= link_to 'New Location', new_location_path %>

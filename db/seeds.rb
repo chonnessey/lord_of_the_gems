@@ -7,7 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Location.destoy_all
+Location.destroy_all
 Npc.destroy_all
 location1 = Location.create({:name => "The Shire", :description => "This is where your journey starts. Grab your supplies, put on a smile, and get ready to charm some orcs"})
 Npc.create({:name => "Terry The Tiny", :hit_points => 10, :disposition => 8, :character_class => "Janitor", :race => "Orc", :location_id => location1.id})
+
+p "Creation successful"
