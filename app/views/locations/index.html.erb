@@ -1,25 +1,35 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Locations</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<h1>Location</h1>
+<% if current_user %>
+  <h4><%= current_user.user_name %>, your journey begins here</h4>
+<% else %>
+  <h4>You want to party with the orcs, you gotta log in.</h4>
+<% end %>
 
   <tbody>
     <% @locations.each do |location| %>
       <tr>
-        <td><%= link_to 'Show', location %></td>
+        <td><%= link_to location.name, location %></td>
         <td><%= link_to 'Edit', edit_location_path(location) %></td>
         <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+      <br>
     <% end %>
   </tbody>
 </table>
 
 <br>
+
+<h4>Off in the distance you see <%= @npc.name %> fast approaching.</h4>
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title"><%= @npc.name %></h4>
+    <div class="card-text">
+      <p><%= @npc.race%> <%= @npc.class%></p>
+      <p><%= @npc.hit_points %></p>
+      <p><%= @npc.disposition %></p>
+    </div>
+  </div>
+</div>
 
 <%= link_to 'New Location', new_location_path %>

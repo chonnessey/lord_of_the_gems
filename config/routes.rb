@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # root to: 'users#index'
+  root to: 'locations#index'
   resources :locations
   resources :npcs
   devise_for :users

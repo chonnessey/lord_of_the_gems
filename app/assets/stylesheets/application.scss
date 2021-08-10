@@ -15,3 +15,28 @@
  */
 
  @import "bootstrap";
+
+ .navbar-div div:last-child {
+  margin-left: auto;
+}
+
+body {
+  background: linear-gradient(144deg, #F1FFE7, #C2E7DA, rgb(136, 175, 220));
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position-y: bottom;
+  min-height: 100vh;
+  padding: 1rem 5em;
+}
+
+.navbar {
+  box-shadow: 0 0 5px 0;
+  margin-bottom:2rem;
+}
+.container {
+  background-color: white;
+  padding-bottom:3rem;
+}
+.collapse {
+  justify-content: flex-end;
+}

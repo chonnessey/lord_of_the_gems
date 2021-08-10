@@ -4,6 +4,8 @@ class LocationsController < ApplicationController
   # GET /locations or /locations.json
   def index
     @locations = Location.all
+    @user = current_user
+    @npc = Npc.find(@locations.first.id)
   end
 
   # GET /locations/1 or /locations/1.json
