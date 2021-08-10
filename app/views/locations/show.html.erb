@@ -3,14 +3,14 @@
 
 <%if @npcs.any? %>
   <h4>Characters:</h4>
-
+<div class="row">
   <% @npcs.each do |npc| %>
   <%= render :partial => "layouts/npc_card", :locals => {:npc => npc} %>
   <% end %>
 <% else %>
   <p>There are no characters in this region yet.</p>
 <% end %>
-
+</div>
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
 

@@ -12,6 +12,11 @@ class LocationsController < ApplicationController
   def show
     @location = Location.find(params[:id])
     @npcs = Npc.where(location_id: params[:id])
+    if Npc.all.sum(:disposition) < @location.disposition_req
+      redirect_to '/locations/', notice: "You do not have enough total disposition to enter this location."
+    else
+
+    end
   end
 
   # GET /locations/new

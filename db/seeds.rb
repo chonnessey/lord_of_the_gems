@@ -9,12 +9,12 @@
 
 Location.destroy_all
 Npc.destroy_all
-location1 = Location.create({:name => "The Shire", :description => "This is where your journey starts. Grab your supplies, put on a smile, and get ready to charm some orcs"})
-location2 = Location.create({:name => "Gondor", :description => "The last bastion of Men! Though probably not anymore"})
-location3 = Location.create({:name => "Rohan", :description => "Horse Country"})
-location4 = Location.create({:name => "Isengaard", :description => "Really just a nice tower since Sauramon left"})
-location5 = Location.create({:name => "Mines of Moria", :description => "Underground, not great for birds"})
-location6 = Location.create({:name => "Mt Doom", :description => "Uh-oh, you've run into Gollum, get by him and destroy the ring"})
+location1 = Location.create({:name => "The Shire", :description => "This is where your journey starts. Grab your supplies, put on a smile, and get ready to charm some orcs", :disposition_req => 0})
+location2 = Location.create({:name => "Gondor", :description => "The last bastion of Men! Though probably not anymore", :disposition_req => 20})
+location3 = Location.create({:name => "Rohan", :description => "Horse Country", :disposition_req => 40})
+location4 = Location.create({:name => "Isengaard", :description => "Really just a nice tower since Sauramon left", :disposition_req => 60})
+location5 = Location.create({:name => "Mines of Moria", :description => "Underground, not great for birds", :disposition_req => 80})
+location6 = Location.create({:name => "Mt Doom", :description => "Uh-oh, you've run into Gollum, get by him and destroy the ring", :disposition_req => 100})
 Npc.create({:name => "Terry The Tiny", :hit_points => 10, :disposition => 6, :character_class => "Janitor", :race => "Orc", :location_id => location1.id})
 Npc.create({:name => "Allister The Adjuster", :hit_points => 5, :disposition => 8, :character_class => "Chiropractor", :race => "Orc", :location_id => location1.id})
 Npc.create({:name => "Adrian The Bird-Man", :hit_points => 15, :disposition => 4, :character_class => "Pilot", :race => "Urak-hai", :location_id => location1.id})
