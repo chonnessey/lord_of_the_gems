@@ -37,3 +37,17 @@ Users (or admins) can create, edit, delete locations
 Users (or admins) can create, edit, delete items
 Users (or admins) can create, edit, delete enemies
 Users can "fight" enemies for items or some kind of points/life
+
+
+
+Goblin
+
+disposition of 2
+to pass you gotta raise it to ten
+
+so you feed it some food, you offer it some gems, and you convince it to like really really labor for peace.
+And now youve got a friend who is like helping you convince more orcs.ActiveRecord
+
+All orcs gain 1 to their disposition
+
+You are frodo and samwise, and this time you gotta destroy the ring again but its an earring, and this time youre trying to be really polite about it.

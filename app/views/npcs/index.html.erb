@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Npcs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @npcs.each do |npc| %>
+      <tr>
+        <td><%= link_to 'Show', npc %></td>
+        <td><%= link_to 'Edit', edit_npc_path(npc) %></td>
+        <td><%= link_to 'Destroy', npc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Npc', new_npc_path %>
