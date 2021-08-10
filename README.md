@@ -51,3 +51,4 @@ And now youve got a friend who is like helping you convince more orcs.ActiveReco
 All orcs gain 1 to their disposition
 
 You are frodo and samwise, and this time you gotta destroy the ring again but its an earring, and this time youre trying to be really polite about it.
+

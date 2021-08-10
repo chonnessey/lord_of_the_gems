@@ -1,0 +1,22 @@
+<h1>Game Overview</h1>
+<h2>Total Disposition: <%=@npcs.sum(:disposition)%></h2>
+
+<hr>
+<div class="row">
+  <div class="col">
+    <h2>Locations</h2>
+    <div class="row">
+    <% @locations.each do |location| %>
+      <%= render :partial => "layouts/location_card", :locals => {:location => location}%>
+      <%end%>
+      </div>
+  </div>
+  <div class="col">
+    <h2>NPCs</h2>
+    <div class="row">
+      <% @npcs.each do |npc| %>
+      <%= render :partial => "layouts/npc_card", :locals => {:npc => npc} %>
+      <%end%>
+      </div>
+  </div>
+</div>

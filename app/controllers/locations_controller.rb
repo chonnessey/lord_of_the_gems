@@ -10,6 +10,8 @@ class LocationsController < ApplicationController
 
   # GET /locations/1 or /locations/1.json
   def show
+    @location = Location.find(params[:id])
+    @npcs = Npc.where(location_id: params[:id])
   end
 
   # GET /locations/new

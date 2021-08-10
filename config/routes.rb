@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'locations#index'
+  resources :games
+  root to: 'games#index'
   resources :locations
   resources :npcs
   devise_for :users

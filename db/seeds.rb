@@ -10,6 +10,16 @@
 Location.destroy_all
 Npc.destroy_all
 location1 = Location.create({:name => "The Shire", :description => "This is where your journey starts. Grab your supplies, put on a smile, and get ready to charm some orcs"})
-Npc.create({:name => "Terry The Tiny", :hit_points => 10, :disposition => 8, :character_class => "Janitor", :race => "Orc", :location_id => location1.id})
+location2 = Location.create({:name => "Gondor", :description => "The last bastion of Men! Though probably not anymore"})
+location3 = Location.create({:name => "Rohan", :description => "Horse Country"})
+location4 = Location.create({:name => "Isengaard", :description => "Really just a nice tower since Sauramon left"})
+location5 = Location.create({:name => "Mines of Moria", :description => "Underground, not great for birds"})
+location6 = Location.create({:name => "Mt Doom", :description => "Uh-oh, you've run into Gollum, get by him and destroy the ring"})
+Npc.create({:name => "Terry The Tiny", :hit_points => 10, :disposition => 6, :character_class => "Janitor", :race => "Orc", :location_id => location1.id})
+Npc.create({:name => "Allister The Adjuster", :hit_points => 5, :disposition => 8, :character_class => "Chiropractor", :race => "Orc", :location_id => location1.id})
+Npc.create({:name => "Adrian The Bird-Man", :hit_points => 15, :disposition => 4, :character_class => "Pilot", :race => "Urak-hai", :location_id => location1.id})
+Npc.create({:name => "Michael The Secret Keeper", :hit_points => 10, :disposition => 1, :character_class => "Unknown", :race => "Giant Spider", :location_id => location4.id})
+Npc.create({:name => "Kyle, Ready For A Change", :hit_points => 20, :disposition => 10, :character_class => "Canvasser", :race => "Ghost", :location_id => location5.id})
+Npc.create({:name => "Gollum The Precious", :hit_points => 50, :disposition => 0, :character_class => "Fisherman", :race => "Hobbit Ghost", :location_id => location6.id})
 
 p "Creation successful"

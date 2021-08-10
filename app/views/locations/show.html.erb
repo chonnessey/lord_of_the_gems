@@ -1,2 +1,16 @@
+<h1><%= @location.name %></h1>
+<h3><%= @location.description%></h3>
+
+<%if @npcs.any? %>
+  <h4>Characters:</h4>
+
+  <% @npcs.each do |npc| %>
+  <%= render :partial => "layouts/npc_card", :locals => {:npc => npc} %>
+  <% end %>
+<% else %>
+  <p>There are no characters in this region yet.</p>
+<% end %>
+
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
+
