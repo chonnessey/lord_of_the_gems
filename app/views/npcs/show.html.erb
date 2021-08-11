@@ -8,4 +8,5 @@
 </div>
 
 <%= link_to 'Edit', edit_npc_path(@npc) %> |
-<%= link_to 'Back', npcs_path %>
+<%= link_to 'Back to the location page', location_path(@npc.location_id) %> |
+<%= link_to 'Back to Game Overview', games_path %>

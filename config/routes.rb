@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :players
+  resources :items
   resources :games
   root to: 'games#index'
   resources :locations

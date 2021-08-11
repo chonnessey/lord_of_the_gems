@@ -4,7 +4,7 @@
 <hr>
 <div class="row">
   <div class="col">
-    <h2>Locations</h2>
+    <h2 class="game-info">Locations</h2>
     <div class="row">
     <% @locations.each do |location| %>
       <%= render :partial => "layouts/location_card", :locals => {:location => location}%>
@@ -12,7 +12,7 @@
       </div>
   </div>
   <div class="col">
-    <h2>NPCs</h2>
+    <h2 class="game-info">NPC's</h2>
     <div class="row">
       <% @npcs.each do |npc| %>
       <%= render :partial => "layouts/npc_card", :locals => {:npc => npc} %>
