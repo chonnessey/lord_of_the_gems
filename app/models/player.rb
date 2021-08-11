@@ -1,4 +1,6 @@
 class Player < ApplicationRecord
-  has_many :inventory
-  has_many :items, :through => :inventory
+  has_many :inventories
+  has_many :items, :through => :inventories
 end
+
+

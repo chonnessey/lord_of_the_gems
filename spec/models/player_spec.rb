@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe Player, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+# describe Player do
+#   it { should have_many(:items).through(:inventories) }
+# end

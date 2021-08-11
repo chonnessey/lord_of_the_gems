@@ -1,4 +1,4 @@
 class Item < ApplicationRecord
-  has_many :inventory
-  has_many :players, through => :inventory
+  has_many :inventories
+  has_many :players, :through => :inventories
 end
