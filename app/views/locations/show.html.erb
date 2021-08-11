@@ -11,7 +11,10 @@
   <p>There are no characters in this region yet.</p>
 <% end %>
 </div>
-<%= link_to 'Edit', edit_location_path(@location) %> |
+<% if current_user && current_user.admin %>
+  <%= link_to 'Edit', edit_location_path(@location) %>
+  |
+<% end %>
 <%= link_to 'Back to Locations', locations_path %> |
 <%= link_to 'Back to Game Overview', games_path %>
 

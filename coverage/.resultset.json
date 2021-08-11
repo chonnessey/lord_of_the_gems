@@ -75,6 +75,13 @@
           1,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -739,7 +746,7 @@
           null
         ]
       },
-      "/Users/chonnessey/escuela/lord_of_the_gems/spec/models/inventories_spec.rb": {
+      "/Users/chonnessey/escuela/lord_of_the_gems/spec/models/item_players_spec.rb": {
         "lines": [
           1,
           null,
@@ -749,7 +756,7 @@
           null
         ]
       },
-      "/Users/chonnessey/escuela/lord_of_the_gems/app/models/inventory.rb": {
+      "/Users/chonnessey/escuela/lord_of_the_gems/app/models/item_player.rb": {
         "lines": [
           1,
           1,
@@ -796,6 +803,16 @@
         "lines": [
           1,
           null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/Users/chonnessey/escuela/lord_of_the_gems/app/models/player.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -2445,18 +2462,8 @@
           null,
           null
         ]
-      },
-      "/Users/chonnessey/escuela/lord_of_the_gems/app/models/player.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1628707006
+    "timestamp": 1628715743
   }
 }

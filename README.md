@@ -32,7 +32,7 @@ RPG features to include:
 Users can create, edit and delete accounts
 Users can add, edit and delete an image for their avatars
 Users will have an inventory of items that they can view, add, edit and delete
-Users can visit locations (eg rooms, places, bars, etc) to interact with items and enemies
+Users can visit locations (eg rooms, places, bars, etc) to interact with items and future friends
 Users (or admins) can create, edit, delete locations
 Users (or admins) can create, edit, delete items
 Users (or admins) can create, edit, delete enemies

@@ -13,8 +13,11 @@
     <% @locations.each do |location| %>
       <tr>
         <td><%= link_to location.name, location %></td>
+        <% if is_admin? %>
         <td><%= link_to 'Edit', edit_location_path(location) %></td>
+  <%= link_to 'Edit', edit_location_path(@location) %>
         <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<% end %>
       </tr>
       <br>
     <% end %>
@@ -26,5 +29,6 @@
   <p>Off in the distance you see <%= @npc.name %> fast approaching.</p>
   <%= render :partial => "layouts/npc_card", :locals => {:npc => @npc} %>
 
-
+<% if is_admin? %>
 <%= link_to 'New Location', new_location_path %>
+<% end %>

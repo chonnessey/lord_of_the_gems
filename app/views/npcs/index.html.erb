@@ -20,4 +20,6 @@
 
 <br>
 
-<%= link_to 'New Npc', new_npc_path %>
+<% if is_admin? %>
+  <%= link_to 'New Npc', new_npc_path %>
+<% end %>
