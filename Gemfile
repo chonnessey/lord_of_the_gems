@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
 gem 'bootstrap', '~> 5.0.1'
+gem 'rails_admin', '~> 2.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
