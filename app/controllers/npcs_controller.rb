@@ -8,6 +8,7 @@ class NpcsController < ApplicationController
 
   # GET /npcs/1 or /npcs/1.json
   def show
+    @npc = Npc.find(params[:id])
   end
 
   # GET /npcs/new
@@ -36,14 +37,12 @@ class NpcsController < ApplicationController
 
   # PATCH/PUT /npcs/1 or /npcs/1.json
   def update
-    respond_to do |format|
-      if @npc.update(npc_params)
-        format.html { redirect_to @npc, notice: "Npc was successfully updated." }
-        format.json { render :show, status: :ok, location: @npc }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @npc.errors, status: :unprocessable_entity }
-      end
+    @npc = Npc.find(params[:id])
+    @npc.disposition = @npc.disposition + params[:diplomacy].to_i
+    if @npc.save
+      render :show
+    else
+      render :show
     end
   end
 

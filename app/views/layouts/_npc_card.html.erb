@@ -1,7 +1,7 @@
 <div class="col-sm-4">
   <div class="card m-1">
     <div class="card-body">
-      <h5 class="card-title"><%= npc.name %></h5>
+      <h5 class="card-title"><%= link_to npc.name, npc_path(npc) %></h5>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">Race: <%= npc.race%></li>

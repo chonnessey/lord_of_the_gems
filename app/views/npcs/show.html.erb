@@ -1,4 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-4">
+    <%= render :partial => "layouts/npc_card", :locals => {:npc => @npc} %>
+  </div>
+    <div class="col">
+    <%= render :partial => "layouts/npc_interaction" %>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_npc_path(@npc) %> |
 <%= link_to 'Back', npcs_path %>
